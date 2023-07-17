@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindTypography from "@tailwindcss/typography";
 export default defineNuxtConfig({
+  ssr: true,
+  target: "static",
   devtools: { enabled: true },
   modules: ["nuxt-microcms-module", "@nuxtjs/tailwindcss"],
   microCMS: {
